@@ -1,0 +1,25 @@
+seed: 101
+data:
+  dt: 0.001
+  sample: 50000
+  dim: 4
+  nt: 11
+  T: 1
+train:
+  sigma_init: 0.2
+  gauss_number: 500
+  sampling: SDE
+  variance_min: 0.4
+  variance_max: 1.0
+  lmm: LMM_3
+
+NN:
+  width: 400
+  depth: 5
+  lr: 0.01
+  gamma: 0.5
+  iter: 4000
+
+
+
+  

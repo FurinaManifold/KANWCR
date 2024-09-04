@@ -1,0 +1,26 @@
+seed: 101
+data:
+  dt: 0.001
+  sample: 50000
+  dim: 3
+  nt: 11
+  T: 1
+  plot_path: 'result3D'
+train:
+  sigma_init: 0.2
+  gauss_number: 500
+  sampling: SDE
+  variance_min: 0.5
+  variance_max: 1.2
+  lmm: LMM_3
+
+NN:
+  width: 200
+  depth: 5
+  lr: 0.01
+  gamma: 0.5
+  iter: 4000
+
+
+
+  

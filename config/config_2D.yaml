@@ -1,0 +1,41 @@
+seed: 101
+
+device: cuda:0
+
+Project:
+  name: 'WCR2d'
+  checkpoint: False
+  save_top_k: 1
+  erase: True
+  devices: 1
+  accelerator: 'gpu'
+  PATH: /home/ubuntu/myproject/wcr_neural/save_files
+  save_dir: 1d
+
+data:
+  dt: 0.001
+  sample: 50000
+  dim: 2
+  nt: 11
+  T: 1
+  plot_path: /home/ubuntu/myproject/wcr_neural_kan/result1D
+  model : pdcd
+train:
+  sigma_init: 0.2
+  gauss_number: 240
+  sampling: SDE
+  variance_min: 0.3
+  variance_max: 0.7
+  LMM: LMM_3
+
+NN:
+  dim: 2
+  activation: GeLU 
+  width: 100
+  depth: 5
+  lr: 0.01
+  gamma: 0.2
+  iter: 2000
+
+
+  
